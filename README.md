@@ -20,5 +20,5 @@ A etapa de inteligência e limpeza de dados envolveu:
 * **Padronização de Strings:** Aplicação de tratamento de texto (`.str.upper()`) para normalizar e categorizar registros textuais de forma sistêmica.
 * **Persistência e Consultas:** Escrita de queries estruturadas em SQL envolvendo junções (`JOINs`), agregações, subqueries e filtros avançados para consolidação de dados.
 
-## 📊 Como Visualizar o Projeto
+##  Como Visualizar o Projeto
 O código completo com as saídas e tabelas geradas em tempo real pode ser visualizado diretamente no arquivo do caderno digital criado para esta análise.
