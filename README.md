@@ -1,21 +1,40 @@
 Sistema de Gerenciamento e Estruturação de Dados (Java & SQL)
 
-Este projeto apresenta o desenvolvimento de um sistema corporativo focado no processamento, organização e armazenamento seguro de dados institucionais, simulando a triagem e o controle de projetos de grande porte.
+Este projeto apresenta o desenvolvimento de um sistema corporativo focado no processamento, organização e armazenamento seguro de dados institucionais. O sistema simula a lógica de um **Sistema de Triagem e Governança de Projetos**, inspirado nos modelos de arquitetura de dados utilizados por empresas públicas como a **Dataprev**.
 
-## Tecnologias e Ferramentas Utilizadas
-* **Linguagem de Programação:** Java (Lógica Orientada a Objetos para persistência de dados)
-* **Banco de Dados:** Relacional (MySQL / MariaDB) com comandos estruturados SQL
-* **Ambiente de Desenvolvimento:** IDE para integração de sistemas e consolidação de dados
-* **Controle de Versão:** Git / GitHub
+---
 
-## Estrutura e Funcionalidades do Banco de Dados
-O projeto realiza a modelagem completa de um banco de dados relacional voltado para a governança corporativa:
+##  Tecnologias e Ferramentas Utilizadas
 
-1. **Criação do Ambiente:** Estruturação do banco de dados `sistema_corporativo` de forma sistêmica.
-2. **Modelagem de Tabelas:** Criação da tabela `projetos` utilizando chaves primárias com incremento automático (`PRIMARY KEY AUTO_INCREMENT`), tratamento rigoroso para valores numéricos (`DECIMAL`) e carimbo de data automatizado (`TIMESTAMP`).
-3. **Persistência de Dados:** Inserção e manipulação de registros de teste para validação de fluxos (Simulação com o *Sistema de Triagem Dataprev*).
-4. **Consultas Estruturadas:** Escrita de queries (`SELECT *`) para auditoria, extração rápida e geração de relatórios de dados.
+* **Linguagem Back-End:** Java (Lógica Orientada a Objetos para regras de negócio e persistência).
+* **Banco de Dados:** Relacional (MySQL / MariaDB) com escrita de queries estruturadas e otimizadas.
+* **Governança:** Modelagem de dados baseada em integridade referencial, auditoria e segurança da informação.
+* **Controle de Versão:** Git e GitHub para documentação e versionamento.
 
-## Como Visualizar o Projeto
-* O script de criação das tabelas e inserção de dados está disponível no arquivo `script_banco.sql`.
-* A lógica de integração e exibição dos dados via terminal está estruturada no arquivo `ECommerceApp.java`.
+---
+
+##  Estrutura da Solução e Regras de Negócio
+
+O projeto foi construído dividindo a inteligência do software em duas frentes integradas:
+
+### 1. Modelagem e Governança do Banco de Dados (`script_banco.sql`)
+* **Estruturação Sistêmica:** Criação do banco de dados focado em auditoria interna e rastreabilidade.
+* **Integridade de Dados:** Tabelas com chaves primárias auto-incrementais (`PRIMARY KEY AUTO_INCREMENT`), constraints para consistência financeira (`DECIMAL`) e rastreabilidade temporal automatizada (`TIMESTAMP`).
+* **Relatórios e Auditoria:** Desenvolvimento de queries avançadas para extração rápida de dados, simulando auditorias de conformidade do setor público.
+
+### 2. Lógica de Integração (`ECommerceApp.java`)
+* **Processamento de Dados:** Arquitetura em Java que consome, valida e manipula as regras corporativas dos registros.
+* **Consistência:** Aplicação de conceitos de POO para garantir que os dados trafegados entre o banco e o usuário não sofram corrupção ou vazamento de escopo.
+
+---
+
+#  Como Executar e Validar o Projeto
+
+1. Certifique-se de ter o **Java JDK** e o **MySQL/MariaDB** instalados na sua máquina.
+2. Execute o script contido em `script_banco.sql` para criar e popular o banco de dados.
+3. Abra e execute a classe `ECommerceApp.java` na sua IDE de preferência para rodar a aplicação via terminal.
+
+---
+
+#  Aprendizados e Soft Skills Aplicados
+Este projeto reflete não apenas o domínio técnico em Java e SQL, mas também competências essenciais de **atenção a processos, controle rigoroso de dados e organização lógica**, habilidades consolidadas ao longo da minha trajetória profissional em controle de inventários e almoxarifados.
